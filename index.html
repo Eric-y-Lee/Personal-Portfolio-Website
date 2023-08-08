@@ -1,0 +1,166 @@
+<!-- Eric Lee
+Personal Portfolio Website using HTML, CSS, JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Lee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class = "navbar__container">
+            <a href="#" id = "name">Eric Lee</a>
+            <div class = "navbar__toggle" id = "mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class = "navbar__menu">
+                <li class = "navbar__items">
+                    <a href="#about" class = "navbar__links">About</a>
+                </li>
+                <li class = "navbar__items">
+                    <a href="#projects" class = "navbar__links">Projects</a>
+                </li>
+                <li class = "navbar__items">
+                    <a href="#contact" class = "navbar__links">Contact</a>
+                </li>
+                <li class = "navbar__items">
+                    <a href= "https://www.linkedin.com/in/eric-y-lee/" target = "_blank" class = "navbar__links">
+                        <img src="images/linkedin.jpg" alt="LinkedIn Image" class = "bar_images">
+                    </a>
+                </li>
+                <li class = "navbar__items">
+                    <a href= "https://github.com/Eric-y-Lee" target = "_blank" class = "navbar__links">
+                        <img src="images/github.png" alt="Github Image" class = "bar_images"></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Intoriduction Image -->
+    <div class = "image_container">
+        <img src="images/Background1.jpg" id = "intro_image" alt="UARK">
+        <div class = "title">Hi I'm Eric<br>Welcome to my Website</div>
+    </div>
+
+    <!-- Main -->
+    <div class = "main">
+
+        <!-- Block decorative design -->
+        <div class = "design1"></div>
+        <div class = "design2"></div>
+        <div class = "design3"></div>
+        <div class = "design4"></div>
+
+        <!-- About -->
+        <div class = "about-page" id="about">
+            <h1>About Me</h1>
+            <div class = "about_container" >
+            
+                <div class = "about_content" >
+                    <p>&nbsp;&nbsp;Hi, my name is Eric Lee. I am currently a student of University of Arkansas at 
+                        Fayetteville and pursing a degree in Bachelor's of Science in Computer Science 
+                        and minors in Mathematics and Data Analytics. I am expected to graduate December of 2024.</p>
+                    <br>
+                        <p>&nbsp;&nbsp;I took interest in coding 
+                        since Highschool and I know languages Java, Python, HTML, JavaScript, and C++.
+                        I built this website from scratch using HTML, CSS, and JavaScript to 
+                        display my skills at coding, personal projects, and more!</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Projects -->
+        <div class = "project" id = "projects">   
+            <h2>Projects</h2>
+            <div class = "project_container">
+                <div class = "project_blocks">
+                    <img src="images/Website1.png" class = "project_img" alt="Website" >
+                    <h3>Personal Portfolio Website</h3>
+                </div>
+        
+                <div class = "project_blocks">
+                    <img src="images/LinkGame.png" class = "project_img" alt="Link" >
+                    <h3>Link Game</h3>
+                </div>
+            </div>
+
+            <!-- popup-window -->
+            <div class = "popup-image" >
+                <div class = "popup-image-background">
+                    
+                    <img src="" alt="" >
+                    <div class="text-container">
+                        <p class="hidden" id = "text1">
+                            &nbsp;&nbsp;As a computer science student, I built my personal portfolio website from scratch
+                            using combination of HTML, CSS, and JavaScript. This website includes introduction 
+                            about myself, contact information, list of projects, and directory to my LinkedIn, 
+                            and Github.
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;Using HTML, I created the website's structure and content to decide which sections go
+                            where, how it should flow within the website, and the text inclduing this one! 
+                            With CSS, I added custom styles to the elements ensuring that its appearence is aesthetically
+                            pleasing and adpating the layout to different window sizes. 
+                            JavaScript is also implemented to enhance user interaction such as adjusting the navigating bar
+                            according to the different window size and incorporating popup-window to read details on the 
+                            projects I have done.
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;Throughout the development process, I practiced clean coding, ability to problem-solve, and 
+                            learn more about HTML, CSS, and JavaScript!
+                        </p>
+                        <p class = "hidden" id = "text2">
+                            &nbsp;&nbsp;Using Java, I implemented a Link game where the user is able to interact with Link by
+                            moving around a map, throwing boomerangs, and detecting collisions with walls and pots. 
+                            This is an in-class project that was accomplished by applying
+                            object-oriented programming (OOP) principles such as inheritance, polymorphism, and abstraction.
+                            <br>
+                            &nbsp;&nbsp;The Link walking animation is achieved by looping through a series of images, 
+                            depending on the direction of walking. Additionally, Link can throw a boomerang by pressing 
+                            'CONTROL'. The boomerang image also changes, depending on the direction it is thrown.
+                            When Link collides with a pot, the pot is pushed in the same direction until it collides against 
+                            a wall. Once collided, the pot changes to a broken image and remains on the screen for a couple 
+                            of seconds before disappearing. The same behavior applies when a boomerang collides with a pot.
+                            <br>
+                            &nbsp;&nbsp;To achieve this, a Sprite class was created using abstraction, inheritance, and polymorphism, 
+                            acting as a superclass. Subclasses, such as Link class, Pot class, Tile class, and Boomerang class, were 
+                            created to reduce the complexity of the code and avoid adding unnecessary methods to the classes. 
+                            Inheritance and polymorphism are used, as all the classes listed above are related to each other, 
+                            and each method has different uses for each subclass.
+                        </p>
+                    </div>
+                </div>
+                <!-- the 'x' or 'exit' button for pop-up window -->
+                <span>&times</span>
+            </div>
+        </div>
+        
+        <!-- Contact -->
+        <h4>Contact Me</h4>
+        <div class = "c_container" id = "contact">
+            <div class = "contact_container">
+                <p class = "contact_info">Email: </p>
+                <a href="mailto: ericyl0104@gmail.com" class = "contact_info" id = "email">ericyl0104@gmail.com</a>
+            </div>
+
+            <div class = "contact_container">
+                <p class = "contact_info">Phone: </p>
+                <a href="tel:5012461145" class = "contact_info" id = "number">(501)246-1145</a>
+            </div>
+        </div>
+
+    </div>
+    <div class = "footer"></div>
+    <script src= "app.js"></script>
+</body>
+</html>
