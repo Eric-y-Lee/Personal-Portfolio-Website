@@ -221,6 +221,8 @@
     border-radius: 15px 50px;
     max-width: 1300px;
     padding: 50px;
+    text-align: center;
+    border: 1px solid black;
 }
 
 .about_content p{
@@ -231,7 +233,8 @@
 h2{
     font-size: 1.8rem;
     text-align: center;
-    padding: 50px;
+    padding: 28px;
+    padding-top: 50px;
 }
 
 .project{
@@ -252,23 +255,42 @@ h2{
     margin: 10px;
     height: 450px;
     width: 550px;
-    border-radius: 4px;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    border: 30px solid white;
+    /* border: 30px solid white; */
+    border: 1px solid black;
+    transition: .2s linear;
+    position: relative;
 }
 
-.project_blocks:hover img{
+.project_blocks:hover{
     transform: scale(1.05);
+    border: 1px solid black;
+    box-shadow: 0 0 0 2px #d0d0d0;
+    /* border: 3px solid #d0d0d0;
+    margin: -2px; */
 }
 
 .project_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 490px;
     height: 332px;
     object-fit: cover;
-    transition: .2s linear;
+}
+
+.project-video{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 490px;
+    height: 332px;
+    object-fit: cover;
+    position: flex;
 }
 
 .project_blocks h3{
@@ -277,6 +299,16 @@ h2{
     font-size: 1.8rem;
     padding: 15px;
     background-color: white;
+    border-radius: 25px;
+}
+
+.project_blocks h4{
+    text-align: center;
+    color: black;
+    font-size: 1.7rem;
+    margin: 20px;
+    background-color: white;
+    border-radius: 25px;
 }
 
 .popup-image{
@@ -326,6 +358,28 @@ h2{
     display: none;
 }
 
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
 /* used to change the number of columns according to its screen size */
 @media screen and (max-width: 1100px){
     .project_container{
@@ -356,6 +410,7 @@ h2{
     margin-right: 10px;
     text-align: center;
     padding: 25px;
+    border: 1px solid black;
 }
 
 h4{
