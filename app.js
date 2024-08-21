@@ -75,6 +75,21 @@ projectBlocks.forEach((block, index) => {
   });
 });
 
+//Plays the video when hovered with mouse
+projectBlocks.forEach(block => {
+  const video = block.querySelector('video');
+
+  if(video){
+    block.addEventListener("mouseenter", () => {
+      video.play();
+    });
+    block.addEventListener("mouseleave", () =>{
+      video.pause();
+    });
+
+  }
+});
+
 // // Close the popup when the close button (x) is clicked
 // const closeButton = popup.querySelector('span');
 // closeButton.addEventListener('click', () => {
@@ -99,15 +114,3 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }
-
-
-const videoContainer = document.querySelector('.project_blocks')
-const video = document.querySelector('.vid');
-
-videoContainer.addEventListener("mouseenter", () =>{
-  video.play();
-});
-
-videoContainer.addEventListener("mouseleave", () =>{
-  video.pause();
-});
