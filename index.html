@@ -33,12 +33,12 @@ Personal Portfolio Website using HTML, CSS, JavaScript -->
                 </li>
                 <li class = "navbar__items">
                     <a href= "https://www.linkedin.com/in/eric-y-lee/" target = "_blank" class = "navbar__links">
-                        <img src="images/linkedin.jpg" alt="LinkedIn Image" class = "bar_images">
+                        <img src="src/linkedin.jpg" alt="LinkedIn Image" class = "bar_images">
                     </a>
                 </li>
                 <li class = "navbar__items">
                     <a href= "https://github.com/Eric-y-Lee" target = "_blank" class = "navbar__links">
-                        <img src="images/github.png" alt="Github Image" class = "bar_images"></a>
+                        <img src="src/github.png" alt="Github Image" class = "bar_images"></a>
                 </li>
 
             </ul>
@@ -47,8 +47,8 @@ Personal Portfolio Website using HTML, CSS, JavaScript -->
 
     <!-- Intoriduction Image -->
     <div class = "image_container">
-        <img src="images/Background1.jpg" id = "intro_image" alt="UARK">
-        <div class = "title">Hi I'm Eric<br>Welcome to my Website</div>
+        <img src="src/Background1.jpg" id = "intro_image" alt="UARK">
+        <div class = "title">Hi, I'm Eric!<br>Welcome to my Website!</div>
     </div>
 
     <!-- Main -->
@@ -66,12 +66,12 @@ Personal Portfolio Website using HTML, CSS, JavaScript -->
             <div class = "about_container" >
             
                 <div class = "about_content" >
-                    <p>&nbsp;&nbsp;Hi, my name is Eric Lee. I am currently a student of University of Arkansas at 
+                    <p>&nbsp;&nbsp;Hi, my name is Eric Lee. I am currently a student at the University of Arkansas at 
                         Fayetteville and pursing a degree in Bachelor's of Science in Computer Science 
                         and minors in Mathematics and Data Analytics. I am expected to graduate December of 2024.</p>
                     <br>
                         <p>&nbsp;&nbsp;I took interest in coding 
-                        since Highschool and I know languages Java, Python, HTML, JavaScript, and C++.
+                        since High School and I know languages Python, Java, HTML, JavaScript, and C++.
                         I built this website from scratch using HTML, CSS, and JavaScript to 
                         display my skills at coding, personal projects, and more!</p>
                 </div>
@@ -84,13 +84,24 @@ Personal Portfolio Website using HTML, CSS, JavaScript -->
             <h2>Projects</h2>
             <div class = "project_container">
                 <div class = "project_blocks">
-                    <img src="images/Website1.png" class = "project_img" alt="Website" >
+                    <img src="src/Website1.png" class = "project_img" alt="Website" >
                     <h3>Personal Portfolio Website</h3>
                 </div>
         
                 <div class = "project_blocks">
-                    <img src="images/LinkGame.png" class = "project_img" alt="Link" >
+                    <img src="src/LinkGame.png" class = "project_img" alt="Link" >
                     <h3>Link Game</h3>
+                </div>
+
+                <div class = "project_blocks">
+                    <video src="src/Demo Video.mp4" class = "project-video" muted class = "vid" 
+                    type="video/mp4" loop></video>
+                    <h3>Northwest Arkansas BEDS</h4>
+                </div>
+
+                <div class = "project_blocks">
+                    <img src="src/stock.png" class = "project_img" alt="Real-Time Trading" >
+                    <h4>Real-Time Stock/Crypto Trading</h4>
                 </div>
             </div>
 
@@ -119,6 +130,7 @@ Personal Portfolio Website using HTML, CSS, JavaScript -->
                             &nbsp;&nbsp;Throughout the development process, I practiced clean coding, ability to problem-solve, and 
                             learn more about HTML, CSS, and JavaScript!
                         </p>
+                        
                         <p class = "hidden" id = "text2">
                             &nbsp;&nbsp;Using Java, I implemented a Link game where the user is able to interact with Link by
                             moving around a map, throwing boomerangs, and detecting collisions with walls and pots. 
@@ -138,8 +150,41 @@ Personal Portfolio Website using HTML, CSS, JavaScript -->
                             Inheritance and polymorphism are used, as all the classes listed above are related to each other, 
                             and each method has different uses for each subclass.
                         </p>
+
+                        <p class = "hidden" id = "text3">
+                            &nbsp;&nbsp;Northwest Arkansas BEDS is a Bed Evaluation & Database System.
+                            This was implemented by using Python, SQL, HTML, and JSON. This was done with
+                            other members of the Univerisity of Arkansas McMillon Innovation Studio.
+                            <br>
+                            &nbsp;&nbsp;The problem that the Northwest Arkansas Hospitals have is that they use
+                            GruopMe to contact other local hospitals to find availbility of beds. This is an inefficent 
+                            way of communication and at times of emergency, problems like these need to be solved quickly.
+                            This is where our BEDS database is a way to solution.
+                            <br>
+                            &nbsp;&nbsp;The local NW Arkansas Hospitals send HL7 files to our database at the start and the end 
+                            of the day. Our software filters through the file so that we only read the hospital information
+                            and if the hospital is admiting a patient or declaring an empty spot. The final information is added 
+                            to our database and the nurses can log in to our website. Within the website, the nurses can quickly
+                            look up the location where they need to admit the patient and a list of hospitals with availability 
+                            of beds in a closest zip code order.
+                        </p>
+
+                        <p class = "hidden" id = "text4">
+                            &nbsp;&nbsp;Using Python, Websocket, and Alpaca's Trading API, I have implemented
+                            a real-time stock/crypto trading application. I have wanted to get to know how APIs work 
+                            and how to implement APIs. To start, I have built a real-time stock/crypto trading that 
+                            uses websocket to gather real-time stock and crypto prices. Then using a Python Library, TA-Lib,
+                            the Relative Strength Index (RSI) and Moving Average Convergence/Divergence (MACD).
+                            <br>
+                            &nbsp;&nbsp;With the calculated RSI and MACD, the prgoram automatically buys and sells 
+                            by using algorithmic strategies to receive profits. 
+                            <br>
+                            &nbsp;&nbsp;
+                        </p>
                     </div>
                 </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                 <!-- the 'x' or 'exit' button for pop-up window -->
                 <span>&times</span>
             </div>
