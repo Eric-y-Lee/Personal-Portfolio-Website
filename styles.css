@@ -267,7 +267,7 @@ h2{
 }
 
 .project_blocks:hover{
-    transform: scale(1.05);
+    transform: scale(1.04);
     border: 1px solid black;
     box-shadow: 0 0 0 2px #d0d0d0;
     /* border: 3px solid #d0d0d0;
@@ -278,8 +278,10 @@ h2{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 490px;
-    height: 332px;
+    /* width: 490px;
+    height: 332px; */
+    width: 90%;
+    height: 70%;
     object-fit: cover;
 }
 
@@ -311,7 +313,7 @@ h2{
     border-radius: 25px;
 }
 
-.popup-image{
+.popup-window{
     position: fixed;
     top: 0;
     left: 0;
@@ -321,7 +323,7 @@ h2{
     z-index: 99;
     display: none;
 }
-.popup-image-background{
+.popup-window-background{
     height: 85%;
     width: 90%;
     background-color: white;
@@ -332,7 +334,7 @@ h2{
     grid-template-columns: 1fr 1fr;
     border: 2px black;
 }
-.popup-image span{
+.popup-window span{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -343,12 +345,19 @@ h2{
     z-index: 99;
 }
 
-.popup-image img{
+.popup-window img{
     max-width: 100%;
     max-height: 100%;
     padding: 15px;
 }
-.popup-image p{
+
+.popup-window video{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 15px;
+}
+
+.popup-window p{
     font-size: 18px;
     padding: 20px;
     color: black;
@@ -386,7 +395,7 @@ h2{
         grid-template-columns: 1fr;
     }
 
-    .popup-image-background{
+    .popup-window-background{
         grid-template-columns: 1fr;
     }
 }
