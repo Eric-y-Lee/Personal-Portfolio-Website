@@ -153,7 +153,7 @@
     }
 }
 
-@media screen and (max-wdith: 500px){
+@media screen and (max-width: 500px){
     .navbar__toggle .bar {
         width: 28px;
         height: 4px;
@@ -165,8 +165,8 @@
         padding: 1rem 0.4rem;
     }
     .bar_images{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 }
     
