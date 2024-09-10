@@ -152,6 +152,23 @@
         height: 35px;
     }
 }
+
+@media screen and (max-wdith: 500px){
+    .navbar__toggle .bar {
+        width: 28px;
+        height: 4px;
+    }
+    .navbar__items{
+        font-size: 15px;
+    }
+    .navbar__links{
+        padding: 1rem 0.4rem;
+    }
+    .bar_images{
+        width: 30px;
+        height: 30px;
+    }
+}
     
 
 /* Introduction Image */
